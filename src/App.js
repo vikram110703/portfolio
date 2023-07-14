@@ -27,7 +27,7 @@ function App() {
         <CustomLoader />
       ) : (
         <div className="app__container">
-          {/* <Router> */}
+          <Router basename="portfolio">
           <Navbar />
           <Routes  >
             <Route path="/" element={<Home />} />
@@ -38,7 +38,7 @@ function App() {
           </Routes>
           <Footer />
           <ScrollToTop smooth color="black" />
-          {/* </Router> */}
+          </Router>
         </div>
       )}
     </div>

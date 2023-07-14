@@ -1,6 +1,6 @@
 /* MODULES */
 import { useEffect, useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ScrollToTop from "react-scroll-to-top";
 
 /* STYLING */
@@ -33,6 +33,7 @@ function App() {
         <CustomLoader />
       ) : (
         <div className="app__container">
+          <Router>
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -41,6 +42,7 @@ function App() {
             <Route path="/*" Navigate to={"/"} /> 
           </Routes>
           <Footer />
+          </Router>
           <ScrollToTop smooth color="black" />
         </div>
       )}

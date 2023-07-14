@@ -1,5 +1,5 @@
 {
-  "homepage": "https://yashpal-97.github.io",
+  "homepage": "https://vikram110703.github.io/portfolio/",
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -29,6 +29,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
+    "dev": "nodemon run start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -29,7 +29,7 @@ function App() {
         <div className="app__container">
           {/* <Router> */}
           <Navbar />
-          <Routes baseline={"portfolio"} >
+          <Routes  >
             <Route path="/" element={<Home />} />
             {/* <Route path="/" element={<Home />} /> */}
             <Route path="/about" element={<About />} />
